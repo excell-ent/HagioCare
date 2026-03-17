@@ -1,110 +1,115 @@
-body{
+body {
     margin: 0;
-}
-.top-bar{
-    background-color: #4a0e4e;
-} 
-
-.logo-wrap {
-  display: flex;
-  align-items: center;
-  gap: 1px; 
-  justify-content: center;      
-  padding: 5px 0 0 0;
-  width: 100%;
-  margin-right: 0%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.shield {
-  height: 150px;
-  width: 150px;
-  display: block;
-  margin: 0; 
-  margin-right: -25px;
-  margin-top: 0;
-}
-
-.brand-name {
-  color: white;
-  font-size: 28px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  margin: 0 !important;
-  padding: 0 !important;
-  line-height: 1;
-  font-family: sans-serif; /* Removes the "feet" from the letters */
-}
-.list{
-  display: flex;
-  justify-content: center;   
-  padding: 0;
-  width: 100%;
-  height: 45px;
-  align-items: center;
-}
-
-button:hover {
-  transform: scale(1.05);
-  filter: brightness(1.1);
-}
-ul {
-  display: flex;       
-  list-style: none;    
-  gap: 60px;           
-  margin: 0;
-  padding: 0;
-  color: #ffffff;
-  font-size: 14px;
-}
-.get{
-  margin-left: 100px;
-  background: linear-gradient(90deg, #e60026 0%, #a3001a 100%); /* Red gradient */
-  color: white;
-  padding: 8px 24px;         
-  border: none;
-  border-radius: 50px;     
-  font-weight: bold;
-  font-size: 14px;
-  cursor: pointer;
-  box-shadow: 0px 4px 12px rgba(230, 0, 38, 0.4); 
-  transition: transform 0.2s ease;
-  
-}
-ul li a {
-  text-decoration: none; 
-  color: white;
-  line-height: 1; 
-  display: block;         
-}
-.brand-name span {
-  color: #ff007f; 
-}
-.section2 {
-    padding: 60px 11%; 
-    background-color: #f9f7f4; 
     font-family: sans-serif;
 }
 
+/* NAVIGATION */
+.top-bar {
+    background-color: #4a0e4e;
+    padding-bottom: 10px;
+} 
+
+.logo-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;      
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.shield {
+    height: 120px;
+    width: auto;
+}
+
+.brand-name {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.brand-name span {
+    color: #ff007f; 
+}
+
+.list {
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    padding: 15px 0;
+}
+
+ul {
+    display: flex;       
+    list-style: none;    
+    gap: 150px;           
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none; 
+    color: white;
+    font-size: 14px;
+}
+
+.get {
+    margin-left: 50px;
+    background: linear-gradient(90deg, #e60026 0%, #a3001a 100%);
+    color: white;
+    padding: 10px 24px;         
+    border: none;
+    border-radius: 50px;     
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* HERO SECTION */
+.section2 {
+    padding: 80px 10%; 
+    background-color: #f9f7f4; 
+}
+
+.herocontent2 {
+    display: flex;
+    align-items: center;      
+    justify-content: flex-start; 
+    gap: 50px;
+}
+
+.herocontent {
+    flex: 1.2; 
+}
+
 .herocontent h3 {
-    font-size: 30px;
+    font-size: 52px; 
     color: #4a0e4e; 
-    margin-bottom: 20px;
-    line-height: 1.2;
+    margin: 0 0 20px 0;
+    line-height: 1.1;
 }
 
 .herocontent h3 span {
-    color: #7e1e7e; 
+    color: #ff007f; 
 }
 
 .herocontent p {
-    font-size: 15px;
+    font-size: 18px;
     color: #555;
-    max-width: 500px; 
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     line-height: 1.6;
 }
-.hero-btns {
+
+.hero-img-box {
+    flex: 1; 
+    text-align: right;
+}
+
+.hero-image {
+    max-width: 100%; 
+    height: auto;
+}
+
+.herobtn {
     display: flex;
     gap: 15px;
 }
@@ -113,18 +118,44 @@ ul li a {
     background-color: #6a1b9a;
     color: white;
     border: none;
-    padding: 12px 25px;
-    border-radius: 25px;
-    cursor: pointer;
+    padding: 14px 28px;
+    border-radius: 30px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .Join {
     background-color: #e60026;
     color: white;
     border: none;
-    padding: 12px 25px;
-    border-radius: 25px;
-    cursor: pointer;
+    padding: 14px 28px;
+    border-radius: 30px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+    .herocontent2 {
+        flex-direction: column; 
+        text-align: center;
+    }
+    .herobtn {
+        justify-content: center;
+    }
+    .hero-img-box {
+        order: -1; 
+    }
+    ul {
+        display: none; 
+    }
+}
+
+.about, .who{
+  font-size: 30px;
+  color: #4a0e4e;
+}
+.about, .who, p{
+  color: #4a0e4e;
+  margin-bottom: 0;
 }

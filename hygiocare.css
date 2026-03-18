@@ -134,20 +134,71 @@ ul li a {
     cursor: pointer;
 }
 
-/* MOBILE VIEW */
-@media (max-width: 768px) {
-    .herocontent2 {
-        flex-direction: column; 
-        text-align: center;
+@media (max-width: 600px) {
+    .logo-wrap {
+        flex-direction: column;
+        padding: 20px 0;
     }
-    .herobtn {
-        justify-content: center;
+    .shield {
+        height: 80px; 
+        margin-right: 0;
     }
-    .hero-img-box {
-        order: -1; 
+    .list {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
     }
     ul {
-        display: none; 
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .get {
+        margin-left: 0; 
+        width: 80%;
+    }
+
+    .section2, .hero-section {
+        padding: 40px 5%; 
+        text-align: center;
+    }
+    .herocontent2, .container {
+        flex-direction: column !important; 
+        gap: 20px;
+    }
+    .hero-text h1, .herocontent h3 {
+        font-size: 32px !important; 
+        line-height: 1.2;
+    }
+    .hero-text p, .herocontent p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    .hero-btns, .herobtn {
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+    }
+    .hero-btns button, .herobtn button {
+        width: 100%; 
+        max-width: 280px;
+    }
+
+    .hero-img, .hero-img-box {
+        order: -1; 
+        width: 100%;
+    }
+    .hero-image, .hero-img img {
+        width: 80%; 
+        margin: 0 auto;
+    }
+
+    .card-container {
+        flex-direction: column !important;
+        gap: 15px;
+    }
+    .info-card {
+        width: 100%;
     }
 }
 
@@ -158,4 +209,40 @@ ul li a {
 .about, .who, p{
   color: #4a0e4e;
   margin-bottom: 0;
+}
+
+.about-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 10%;
+    background-color: #f9f7f4;
+}
+
+.info-card {
+    flex: 1; 
+    padding: 30px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.purple-gradient {
+    background: linear-gradient(135deg, #4a0e4e, #e60026);
+    color: white;
+}
+
+.white-bg {
+    background-color: white;
+    color: #333;
+}
+
+.info-card img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.info-card h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
 }

@@ -182,13 +182,16 @@ ul li a {
 
 /* Colors */
 .purple-gradient { 
-    background: linear-gradient(135deg, #4a0e4e, #e60026); color: white; 
+    background: linear-gradient(135deg, #4a0e4e, #e60026); 
+    color: white; 
 }
 .pink-gradient { 
-    background: linear-gradient(135deg, #ff007f, #ff66b2); color: white; 
+    background: linear-gradient(135deg, #ff007f, #ff66b2); 
+    color: white; 
 }
 .white-bg { 
-    background-color: white; color: #333; 
+    background-color: white; 
+    color: #333; 
 }
 
 @media (max-width: 600px) {
@@ -264,6 +267,25 @@ ul li a {
     .health, .impact, .susta, .prevent {
         padding: 20px;
     }
+    .allimpact {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+    }
+    
+    .allimpact h3 {
+        font-size: 22px;
+    }
+    
+    .allimpact p {
+        font-size: 10px;
+    }
+     .team-grid { 
+        grid-template-columns: 1fr; 
+    }
+    .team-card:last-child { 
+        grid-column: span 1; 
+        width: 100%; 
+    }
 }
 .ourprogram {
     display: grid;
@@ -274,7 +296,7 @@ ul li a {
 }
 
 .health, .impact, .susta, .prevent {
-    background-color: white; 
+    background-color: #f9f9f9; 
     border-radius: 20px;
     padding: 30px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08); 
@@ -298,4 +320,95 @@ ul li a {
 .head{
     font-size: 30px;
     color: #4a0e4e;
+}
+
+.allimpact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+    gap: 20px;
+}
+.support, .engage, .campaign, .people{
+    background: linear-gradient(135deg, #4a0e4e 0%, #ff007f 100%);; 
+    text-align: center;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: #555;
+    padding: 40px 10%;
+    color: white;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+}
+h4{
+    font-size: 30px;
+    color: #4a0e4e;
+}
+.allimpact p {
+    font-size: 30px;
+}
+.allimpact h3 {
+    font-size: 30px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2); 
+    margin-bottom: 5px;
+}
+.allimpact:hover {
+    transform: translateY(-5px); 
+}
+
+.team-grid {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    column-gap: 40px; 
+    row-gap: 30px;    
+    padding: 20px 10%;
+    width: auto;
+    box-sizing: border-box;
+}
+
+.team-card {
+    width: auto; 
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    text-align: center;
+    border: 1px solid #f0f0f0;
+}
+
+.team-card::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: #fdeff4; 
+    border-radius: 50%;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.team-info h5 {
+    color: #4a0e4e;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.team-info p {
+    color: #ff007f;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.team-contact {
+    font-size: 12px;
+    color: #888;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    width: 100%;
+}
+.team-card:last-child {
+    grid-column: span 2; 
+    width: 50%;
+    margin: 0 auto;
 }

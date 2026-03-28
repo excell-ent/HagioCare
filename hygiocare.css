@@ -1,12 +1,13 @@
-/* --- BASE STYLES --- */
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: sans-serif;
     overflow-x: hidden; 
     background-color: #f9f7f4;
 }
-
-/* --- NAVIGATION --- */
 .top-bar {
     background-color: #4a0e4e;
     padding-bottom: 10px;
@@ -194,101 +195,6 @@ ul li a {
     color: #333; 
 }
 
-@media (max-width: 600px) {
-    .list { 
-        padding: 10px 5px; 
-    }
-    ul { 
-        gap: 8px; 
-    } 
-    ul li a { 
-        font-size: 9px; 
-    }
-    .get { 
-        font-size: 9px; 
-        padding: 6px 12px; 
-        margin-left: 5px; 
-    }
-
-    .herocontent2 { 
-        flex-direction: row !important; 
-        gap: 10px; 
-    } 
-    .herocontent h3 { 
-        font-size: 18px !important; 
-    }
-    .herocontent p { 
-        font-size: 10px; 
-        line-height: 1.2; 
-    }
-    .herobtn { 
-        flex-direction: row; 
-        gap: 5px; 
-    }
-    .learn, .Join { 
-        font-size: 8px; 
-        padding: 6px 10px; 
-    }
-
-    .about-cards, .values-grid { 
-        flex-direction: row !important; 
-        gap: 5px; 
-        padding: 20px 0; 
-    }
-    .info-card, .value-card { 
-        padding: 10px 5px; 
-        border-radius: 8px !important; 
-    }
-    .info-card h4, .value-card h4 { 
-        font-size: 10px; 
-        margin-bottom: 4px; 
-    }
-    .info-card p, .value-card p { 
-        font-size: 8px; 
-        line-height: 1.1; 
-    }
-
-    .icon-wrapper { 
-        width: 25px; 
-        height: 25px; 
-        margin-bottom: 5px; 
-    }
-    .icon-wrapper img { 
-        width: 15px; 
-    }
-    .emoji-backup { 
-        font-size: 15px; 
-    }
-     .ourprogram {
-        grid-template-columns: 1fr; 
-        gap: 15px;
-    }
-    
-    .health, .impact, .susta, .prevent {
-        padding: 20px;
-    }
-    
-    .allimpact {
-        grid-template-columns: 1fr; 
-        padding: 20px 15px;         
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .team-grid {
-        grid-template-columns: 1fr; 
-        padding: 20px 15px;         
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .team-card:last-child {
-        width: 100% !important; 
-        margin: 0;
-    }
-        .allimpact h3, .allimpact p {
-        font-size: 20px;
-    }
-}
 .ourprogram {
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -415,4 +321,101 @@ ul li a {
     grid-column: span 2; 
     margin: 0 auto;
     width:50%;
+}
+
+@media (max-width: 600px) {
+    .list { 
+        padding: 10px 5px; 
+    }
+    ul { 
+        gap: 8px; 
+    } 
+    ul li a { 
+        font-size: 9px; 
+    }
+    .get { 
+        font-size: 9px; 
+        padding: 6px 12px; 
+        margin-left: 5px; 
+    }
+
+    .herocontent2 { 
+        flex-direction: row !important; 
+        gap: 10px; 
+    } 
+    .herocontent h3 { 
+        font-size: 18px !important; 
+    }
+    .herocontent p { 
+        font-size: 10px; 
+        line-height: 1.2; 
+    }
+    .herobtn { 
+        flex-direction: row; 
+        gap: 5px; 
+    }
+    .learn, .Join { 
+        font-size: 8px; 
+        padding: 6px 10px; 
+    }
+
+    .about-cards, .values-grid { 
+        flex-direction: row !important; 
+        gap: 5px; 
+        padding: 20px 0; 
+    }
+    .info-card, .value-card { 
+        padding: 10px 5px; 
+        border-radius: 8px !important; 
+    }
+    .info-card h4, .value-card h4 { 
+        font-size: 10px; 
+        margin-bottom: 4px; 
+    }
+    .info-card p, .value-card p { 
+        font-size: 8px; 
+        line-height: 1.1; 
+    }
+
+    .icon-wrapper { 
+        width: 25px; 
+        height: 25px; 
+        margin-bottom: 5px; 
+    }
+    .icon-wrapper img { 
+        width: 15px; 
+    }
+    .emoji-backup { 
+        font-size: 15px; 
+    }
+     .ourprogram {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+    
+    .health, .impact, .susta, .prevent {
+        padding: 20px;
+    }
+    
+    .allimpact {
+        grid-template-columns: 1fr; 
+        padding: 20px 15px;         
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .team-grid {
+        grid-template-columns: 1fr; 
+        padding: 20px 15px;         
+        width: 100%;
+        box-sizing: border-box;
+        grid-column: span 1 !important;
+    }
+
+    .team-card:last-child {
+        width: 100% !important; 
+        margin: 0;
+    }
+        .allimpact h3, .allimpact p {
+        font-size: 20px;
+    }
 }

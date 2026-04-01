@@ -1,191 +1,208 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hygiocare Website</title>
-    <link rel="stylesheet" href="hygiocare.css">
-</head>
-<body>
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hygiocare Website</title>
+    <link rel="stylesheet" href="hygiocare.css" />
+</head>
+
+<body>
     <div class="top-bar">
         <div class="logo-wrap">
-            <img src="logo2.png" class="shield" alt="Logo">
-            <span class="brand-name">Hygio<span>Care</span></span>  
+            <img src="logo2.png" class="logo-img" alt="Logo" />
+            <h1 class="brand-name">Hygio<span>Care</span></h1>
         </div>
-        <div class="list">
-            <ul>
+        <button class="menu js-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="lg-nav-list">
+            <ul class="lg-list">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#program">Programs</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Store</a></li>
-
             </ul>
-            <button class="get">Get involved</button>
+            <button class="get-btn">Get involved</button>
         </div>
     </div>
 
-    <div class="section2">
-        <div class="herocontent2" id="hero">
-            <div class="herocontent">
-                <h3>Promoting Health <br> Through <span>Hygiene</span></h3>
-                <p>Empowering communities with the knowledge <br> and tools needed to maintain proper hygiene <br> and prevent diseases.</p>
-                <div class="herobtn">
-                    <button class="learn">Learn More ></button>
-                    <button class="Join">Join the Movement ></button>
-                </div>
+    <div class="sm-nav-list js-menu-div hide-menu">
+        <ul>
+            <li class="cancel-container">
+                <img src="logo2.png" class="logo-img" alt="Logo" />
+                <img src="./cancel-svgrepo-com (1).svg" alt="cancel icon" class="cancel-icon js-cancel-icon" />
+            </li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#program">Programs</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Store</a></li>
+        </ul>
+        <button class="sm-get-btn">Get involved</button>
+    </div>
+
+    <div class="herocontent2" id="hero">
+        <div class="herocontent reveal">
+            <h3>Promoting Health Through <span>Hygiene</span></h3>
+            <p>
+                Empowering communities with the knowledge and tools needed to maintain
+                proper hygiene and prevent diseases.
+            </p>
+            <div class="herobtn">
+                <button class="learn">Learn More ></button>
+                <button class="Join">Join the Movement ></button>
             </div>
-            <div class="hero-img-box">
-                <img src="img1.png" class="hero-image" alt="Health Promotion">
-            </div>
         </div>
-
-        <h4 class="about" id="about">About HygioCare</h4>
-        <h4 class="who">Who We Are</h4>
-        <p class="who-p">Hygiocare is a community driven initiative dedicated to promoting health through proper hygiene practices. We believe that <b>awareness</b> and <b>education</b> are powerful tools.</p>
-        
-        <section class="about-cards">
-    <div class="info-card purple-gradient">
-        <div class="icon-wrapper">
-            <img src="logo2.png" alt="Awareness" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="emoji-backup" style="display:none;">✨</span>
+        <div class="hero-img-box">
+            <img src="img1.png" class="hero-image" alt="Health Promotion" />
         </div>
-        <h4>Awareness</h4>
-        <p>Raising awareness to promote better hygiene.</p>
     </div>
 
-    <div class="info-card white-bg">
-        <div class="icon-wrapper">
-            <img src="Community.png" alt="Community" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="emoji-backup" style="display:none;">🤝</span>
-        </div>
-        <h4>Community</h4>
-        <p>Empowering communities to live healthier lives.</p>
-    </div>
+    <h2 class="about" id="about">About HygioCare</h2>
+    <h4 class="who">Who We Are</h4>
+    <p class="who-p">
+        Hygiocare is a community driven initiative dedicated to promoting health
+        through proper hygiene practices. We believe that <b>awareness</b> and
+        <b>education</b> are powerful tools.
+    </p>
 
-    <div class="info-card white-bg">
-        <div class="icon-wrapper">
-            <img src="Hygiene.png" alt="Hygiene" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="emoji-backup" style="display:none;">🧼</span>
+    <section class="about-cards">
+        <div class="info-card purple-gradient reveal delay-1">
+            <img src="logo2.png" alt="Awareness" />
+            <h4>Awareness</h4>
+            <p>Raising awareness to promote better hygiene.</p>
         </div>
-        <h4>Hygiene</h4>
-        <p>Focusing on proper hygiene and sanitation practices.</p>
-    </div>
-</section>
+        <div class="info-card white-bg reveal delay-2">
+            <img src="Community.png" alt="Community" />
+            <h4>Community</h4>
+            <p>Empowering communities to live healthier lives.</p>
+        </div>
+        <div class="info-card purple-gradient reveal delay-3">
+            <img src="Hygiene.png" alt="Hygiene" />
+            <h4>Hygiene</h4>
+            <p>Focusing on proper hygiene and sanitation practices.</p>
+        </div>
+    </section>
 
-        <h4 class="who">Our Core Values</h4>
-        <section class="values-grid" id="core">
-            <div class="value-card purple-gradient">
+    <h4 class="who">Our Core Values</h4>
+    <section class="values-grid" id="core">
+        <div class="value-card reveal delay-1">
+            <h4>Health Education</h4>
+            <p>Knowledge is the first step toward healthier living.</p>
+        </div>
+        <div class="value-card purple-gradient reveal delay-2">
+            <h4>Our Vision</h4>
+            <p>To build healthier communities through hygiene awareness.</p>
+        </div>
+    </section>
+
+    <section class="programs" id="program">
+        <h4 class="section-label">Our Programs</h4>
+        <div class="programs-grid">
+            <div class="program-card reveal delay-1">
                 <h4>Health Education</h4>
-                <p>Knowledge is the first step toward healthier living.</p>
+                <p>We believe knowledge is the first step toward healthier living.</p>
             </div>
-            <div class="value-card pink-gradient">
-                <h4>Our Vision</h4>
-                <p>To build healthier communities through hygiene awareness.</p>
+            <div class="program-card reveal delay-2">
+                <h4>Community Impact</h4>
+                <p>Our initiatives are focused on creating meaningful change in communities.</p>
             </div>
-        </section>
-
-
-        <section class="Programs" id="program">
-            <h4 class="head">Our Programs</h4>
-             <div class="ourprogram">
-                <div class="health">
-                    <h4>Health Education</h4>
-                    <p>We believe knowledge is the first step <br>
-                        toward healthier living </p>
-                </div>
-                <div class="impact">
-                    <h4>Community Impact</h4>
-                    <p>Our initiatives are focused on creating <br>
-                        meaningful change in communities </p>
-                </div>
-                <div class="prevent">
-                    <h4>Prevention first</h4>
-                    <p>Preventing diseases through hygiene <br>
-                         practices is at the heart of what we do. </p>
-                </div>
-                <div class="susta">
-                    <h4>Sustainability</h4>
-                    <p>We aim to create long-term solutions <br>
-                        that encourage consistent hygiene practices. </p>
-                </div>
-             </div>
-        </section>
-        <section class="impactsection" id="impact">
-            <h4>Our impact</h4>
-            <div class="allimpact">
-                <div class="people">
-                    <h3>500+</h3>
-                    <p>People Educated</p>
-                </div>
-                <div class="campaign">
-                    <h3>20+</h3>
-                    <p>Campaigns</p>
-                </div>
-                <div class="engage">
-                    <h3>15+</h3>
-                    <p>School Engaged</p>
-                </div>
-                <div class="support">
-                    <h3>100+</h3>
-                    <p>Communities Supported</p>
-                </div>
+            <div class="program-card reveal delay-1">
+                <h4>Prevention First</h4>
+                <p>Preventing diseases through hygiene practices is at the heart of what we do.</p>
             </div>
-        </section>
-
-        <section class="team-section" id="team">
-    <h4 class="who" style="text-align: center;">Meet Our Team</h4>
-    <p class="team-intro">Driven by passionate individuals committed to community health and hygiene promotion.</p>
-    
-    <div class="team-grid">
-        <div class="team-card">
-            <img src="oladipupo.jpg" alt="Name" class="team-img">
-            <div class="team-info">
-                <h5>Oladipupo Balogun Olakunle</h5>
-                <p>General Secretary</p>
-                <p> <a href="tel:08123376184">08123376184</a></p>
+            <div class="program-card reveal delay-2">
+                <h4>Sustainability</h4>
+                <p>We aim to create long-term solutions that encourage consistent hygiene practices.</p>
             </div>
         </div>
+    </section>
 
-        <div class="team-card">
-            <img src="oyedayo.jpg" alt="Name" class="team-img">
-            <div class="team-info">
-                <h5>OYENIRAN OYEDAYO OPEYEMI</h5>
-                <p>Logistics and Operations Team Lead</p>
-                <p> <a href="tel:07083190226">07083190226</a></p>
+    <section class="impactsection" id="impact">
+        <h4 class="section-label">Our Impact</h4>
+        <div class="allimpact">
+            <div class="impact-card reveal delay-1">
+                <h3>500+</h3>
+                <p>People Educated</p>
+            </div>
+            <div class="impact-card reveal delay-2">
+                <h3>20+</h3>
+                <p>Campaigns</p>
+            </div>
+            <div class="impact-card reveal delay-3">
+                <h3>15+</h3>
+                <p>Schools Engaged</p>
+            </div>
+            <div class="impact-card reveal delay-4">
+                <h3>100+</h3>
+                <p>Communities Supported</p>
             </div>
         </div>
+    </section>
 
-        <div class="team-card">
-            <img src="deji.jpg" alt="Name" class="team-img">
-            <div class="team-info">
-                <h5>AHMED ABDUL-LATEEF AYODEJI</h5>
-                <p>Content Team Lead</p>
-                <p><a href="tel:08058989642">08058989642</a></p>
+    <section class="team-section" id="team">
+        <h4 class="who" style="text-align: center">Meet Our Team</h4>
+        <p class="team-intro">
+            Driven by passionate individuals committed to community health and
+            hygiene promotion.
+        </p>
+
+        <div class="team-grid">
+            <div class="team-card reveal">
+                <img src="oladipupo.jpg" alt="Name" class="team-img" />
+                <div class="team-info">
+                    <h5>Oladipupo Balogun Olakunle</h5>
+                    <p>General Secretary</p>
+                    <p><a href="tel:08123376184">08123376184</a></p>
+                </div>
+            </div>
+
+            <div class="team-card reveal">
+                <img src="oyedayo.jpg" alt="Name" class="team-img" />
+                <div class="team-info">
+                    <h5>OYENIRAN OYEDAYO OPEYEMI</h5>
+                    <p>Logistics and Operations Team Lead</p>
+                    <p><a href="tel:07083190226">07083190226</a></p>
+                </div>
+            </div>
+
+            <div class="team-card reveal">
+                <img src="deji.jpg" alt="Name" class="team-img" />
+                <div class="team-info">
+                    <h5>AHMED ABDUL-LATEEF AYODEJI</h5>
+                    <p>Content Team Lead</p>
+                    <p><a href="tel:08058989642">08058989642</a></p>
+                </div>
+            </div>
+
+            <div class="team-card reveal">
+                <img src="simi.jpg" alt="Name" class="team-img" />
+                <div class="team-info">
+                    <h5>AKINDELE SINMILOLUWA</h5>
+                    <p>Health Education and Outreach Team Lead</p>
+                    <p><a href="tel:09169719859">09169719859</a></p>
+                </div>
+            </div>
+
+            <div class="team-card reveal">
+                <img src="dorcas.jpg" alt="Name" class="team-img" />
+                <div class="team-info">
+                    <h5>OJEYINKA DORCAS</h5>
+                    <p>Public Relations and Engagement Team Lead</p>
+                    <p><a href="tel:09155782101">09155782101</a></p>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="team-card">
-            <img src="simi.jpg" alt="Name" class="team-img">
-            <div class="team-info">
-                <h5>AKINDELE SINMILOLUWA</h5>
-                <p>Health Education and Outreach Team Lead</p>
-                <p><a href="tel:09169719859">09169719859</a></p>
-            </div>
-        </div>
-
-        <div class="team-card">
-            <img src="dorcas.jpg" alt="Name" class="team-img">
-            <div class="team-info">
-                <h5>OJEYINKA DORCAS</h5>
-                <p>Public Relations and Engagement Team Lead</p>
-                <p><a href="tel:09155782101">09155782101</a></p>
-            </div>
-        </div>
-    </div>
-</section>
-    </div>
+    <script src="./script.js"></script>
 </body>
+
 </html>

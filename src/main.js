@@ -96,8 +96,7 @@ formEl.addEventListener("submit", async (e) => {
   const target = e.currentTarget;
   const formData = new FormData(target);
 
-  const formUrl = import.meta.env.VITE_FORMSPREE_URL;
-  console.log("My URL is:", formUrl);
+  const formUrl = "https://formspree.io/f/xojpnnaq";
 
   const name = formData.get("name");
   const email = formData.get("email");
